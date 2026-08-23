@@ -32,7 +32,6 @@
 <meta content="assets/cover-beginner.jpg" name="twitter:image"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
- Custom style 
 <link href="css/style.css" rel="stylesheet"/>
 <!-- Favicon (SVG inline) -->
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;defs&gt;&lt;linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'&gt;&lt;stop offset='0%' stop-color='%236366f1'/&gt;&lt;stop offset='50%' stop-color='%238b5cf6'/&gt;&lt;stop offset='100%' stop-color='%23ec4899'/&gt;&lt;/linearGradient&gt;&lt;/defs&gt;&lt;rect width='100' height='100' rx='20' fill='url(%23g)'/&gt;&lt;text x='50' y='65' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'&gt;HD&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
@@ -94,19 +93,17 @@
 }</script>
 </head>
 <body class="bg-slate-50">
- ===== Top navigation bar ===== 
 <header class="navbar fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-slate-200/60">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-cobtain justify-between h-16">
+<div class="flex items-center justify-between h-16">
 <!-- Logo -->
-<a class="flex items-cobtain gap-2 flex-shrink-0" href="index.html">
-<div class="w-9 h-9 rounded-lg gradient-bg flex items-cobtain justify-cobtain">
+<a class="flex items-center gap-2 flex-shrink-0" href="index.html">
+<div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
 <span class="text-white font-bold text-sm">HD</span>
 </div>
 <span class="font-bold text-lg gradient-text hidden sm:inline">Holodori Guide</span>
 </a>
- Desktop navigation 
-<nav class="hidden md:flex items-cobtain gap-1">
+<nav class="hidden md:flex items-center gap-1">
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 bg-indigo-50" href="index.html">Home</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="guides.html">Guides</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="guides.html?cat=rhythm">Rhythm game</a>
@@ -114,8 +111,7 @@
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="guides.html?cat=event">Event Guides</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="about.html">About the game</a>
 </nav>
- Search box + mobile menu button 
-<div class="flex items-cobtain gap-3">
+<div class="flex items-center gap-3">
 <form class="hidden sm:block relative" id="searchForm">
 <input aria-label="Search guide" class="search-input w-48 lg:w-64 h-9 pl-9 pr-4 rounded-full text-sm bg-slate-100/80" id="globalSearch" placeholder="Search guide..." type="search"/>
 <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
@@ -129,7 +125,6 @@
 </button>
 </div>
 </div>
- Mobile menu 
 <div class="hidden md:hidden pb-4 border-t border-slate-200 pt-3" id="mobileMenu">
 <nav class="flex flex-col gap-1">
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 bg-indigo-50" href="index.html">Home</a>
@@ -149,13 +144,12 @@
 </div>
 </header>
 <main>
- ===== Hero Area ===== 
 <section class="hero-section pt-28 pb-20 md:pt-36 md:pb-28 text-white">
 <div class="hero-glow hero-glow-1"></div>
 <div class="hero-glow hero-glow-2"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 <div class="max-w-3xl">
-<div class="inline-flex items-cobtain gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-6">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-6">
 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             The summer event "Synchronized Summer Shine" is in progress
           </div>
@@ -181,7 +175,6 @@
               View all guides
             </a>
 </div>
- fast data 
 <div class="grid grid-cols-3 gap-6 mt-14 max-w-lg">
 <div>
 <div class="text-3xl font-bold text-white">150+</div>
@@ -199,16 +192,15 @@
 </div>
 </div>
 </section>
- ===== Game Category Navigation ===== 
 <section class="py-14 md:py-20 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-cobtain mb-12">
+<div class="text-center mb-12">
 <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Guide Categories</h2>
 <p class="text-slate-500 max-w-xl mx-auto">Covers all the core gameplay of the game and finds the guide you need</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-cobtain" href="guides.html?cat=rhythm">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-center" href="guides.html?cat=rhythm">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -216,8 +208,8 @@
 <h3 class="font-semibold text-slate-900 mb-1">Rhythm game</h3>
 <p class="text-xs text-slate-500">Chart analysis and high score techniques</p>
 </a>
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 text-cobtain" href="guides.html?cat=park">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 text-center" href="guides.html?cat=park">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -225,8 +217,8 @@
 <h3 class="font-semibold text-slate-900 mb-1">theme park</h3>
 <p class="text-xs text-slate-500">Facility construction and economic planning</p>
 </a>
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 text-cobtain" href="guides.html?cat=minigame">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 text-center" href="guides.html?cat=minigame">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -235,8 +227,8 @@
 <h3 class="font-semibold text-slate-900 mb-1">mini games</h3>
 <p class="text-xs text-slate-500">Gameplay instructions and reward guide</p>
 </a>
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100 text-cobtain" href="guides.html?cat=character">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100 text-center" href="guides.html?cat=character">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -244,8 +236,8 @@
 <h3 class="font-semibold text-slate-900 mb-1">Character development</h3>
 <p class="text-xs text-slate-500">Team Building and resource allocation</p>
 </a>
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100 text-cobtain" href="guides.html?cat=event">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-purple-500 to-violet-500 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100 text-center" href="guides.html?cat=event">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-purple-500 to-violet-500 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -253,8 +245,8 @@
 <h3 class="font-semibold text-slate-900 mb-1">Event Guides</h3>
 <p class="text-xs text-slate-500">Limited event gameplay guide</p>
 </a>
-<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-gray-100 border border-slate-200 text-cobtain" href="guides.html?cat=beginner">
-<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-slate-600 to-gray-700 flex items-cobtain justify-cobtain text-white">
+<a class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-gray-100 border border-slate-200 text-center" href="guides.html?cat=beginner">
+<div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-slate-600 to-gray-700 flex items-center justify-center text-white">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -265,7 +257,6 @@
 </div>
 </div>
 </section>
- ===== Editor’s Picks ===== 
 <section class="py-14 md:py-20 gradient-bg-soft">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-end justify-between mb-10">
@@ -273,7 +264,7 @@
 <div class="text-sm font-semibold text-indigo-600 mb-2">Editor's Picks</div>
 <h2 class="text-2xl md:text-3xl font-bold text-slate-900">This week’s must-read guide</h2>
 </div>
-<a class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-cobtain gap-1" href="guides.html">
+<a class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1" href="guides.html">
             View all
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -281,77 +272,71 @@
 </a>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
- Featured 1 
 <a class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" href="guides/beginner-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="hololive Dreams Beginner’s Guide Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
+<img alt="hololive Dreams Beginner’s Guide Cover" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-beginner">Getting Started</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Beginner's Guide: Get Started Quickly in 5 Minutes hololive Dreams</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">From downloading and installing to basic operations, we will guide you step by step into the dream world of rhythm and park.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-23</span>
-<span>2.3w reading</span>
+<span>23K reads</span>
 </div>
 </div>
 </a>
- Featured 2 
 <a class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" href="guides/rhythm-high-score-tips.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Rhythm game high score skills cover image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"/>
+<img alt="Rhythm game high score skills cover image" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-rhythm.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-rhythm">Rhythm game</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Rhythm game high score skills: the path to advancement from novice to expert</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Master the essence of judgment, the combination of COMBO combos and character skills, and easily achieve high scores in the whole company.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-28</span>
-<span>1.8w reading</span>
+<span>18K reads</span>
 </div>
 </div>
 </a>
- Featured 3 
 <a class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" href="guides/theme-park-build-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Cover image of Theme Park Construction Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda"/>
+<img alt="Cover image of Theme Park Construction Guide" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-theme-park.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-park">theme park</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Complete Guide to Building Theme Parks: Build the Fantasy Park of Your Dreams</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">The economic system, facility layout, mission routes, and all aspects of the park's operation will be explained in one go.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-01</span>
-<span>1.5w reading</span>
+<span>15K reads</span>
 </div>
 </div>
 </a>
- Featured 4 
 <a class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" href="guides/summer-event-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Summer Activities Synchronized Summer Sparkle Guide Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
+<img alt="Summer Activities Synchronized Summer Sparkle Guide Cover" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-event">Event Guides</span>
 <span class="absolute top-3 right-3 px-2 py-0.5 bg-rose-500 text-white text-xs font-bold rounded-full">NEW</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Complete guide to the summer event "Synchronized Summer Shine"</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Analysis of miComet swimsuit card pool, new song Sugar Rush chart guide, and efficient token earning route.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-07</span>
-<span>3.1w reading</span>
+<span>31K reads</span>
 </div>
 </div>
 </a>
 </div>
 </div>
 </section>
- ===== Popular List + Latest Strategies ===== 
 <section class="py-14 md:py-20 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid lg:grid-cols-3 gap-10">
- Popular list 
 <div class="lg:col-span-1">
-<div class="flex items-cobtain gap-2 mb-6">
+<div class="flex items-center gap-2 mb-6">
 <svg class="w-5 h-5 text-amber-500" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
 </svg>
@@ -364,9 +349,9 @@
 <span class="rank-number rank-1">1</span>
 <div class="flex-1 min-w-0">
 <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">Complete guide to the summer event "Synchronized Summer Shine"</h3>
-<div class="flex items-cobtain gap-2 mt-1 text-xs text-slate-400">
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
 <span class="category-tag category-event text-[10px] px-2 py-0">Event</span>
-<span>3.1w reading</span>
+<span>31K reads</span>
 </div>
 </div>
 </a>
@@ -376,9 +361,9 @@
 <span class="rank-number rank-2">2</span>
 <div class="flex-1 min-w-0">
 <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">Beginner's guide: Get started quickly in 5 minutes</h3>
-<div class="flex items-cobtain gap-2 mt-1 text-xs text-slate-400">
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
 <span class="category-tag category-beginner text-[10px] px-2 py-0">getting Started</span>
-<span>2.3w reading</span>
+<span>23K reads</span>
 </div>
 </div>
 </a>
@@ -388,9 +373,9 @@
 <span class="rank-number rank-3">3</span>
 <div class="flex-1 min-w-0">
 <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">Rhythm Game High Score Tips: From Novice to Expert</h3>
-<div class="flex items-cobtain gap-2 mt-1 text-xs text-slate-400">
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
 <span class="category-tag category-rhythm text-[10px] px-2 py-0">Rhythm</span>
-<span>1.8w reading</span>
+<span>18K reads</span>
 </div>
 </div>
 </a>
@@ -400,9 +385,9 @@
 <span class="rank-number rank-other">4</span>
 <div class="flex-1 min-w-0">
 <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">A complete guide to character development and formation</h3>
-<div class="flex items-cobtain gap-2 mt-1 text-xs text-slate-400">
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
 <span class="category-tag category-character text-[10px] px-2 py-0">Character</span>
-<span>1.6w reading</span>
+<span>16K reads</span>
 </div>
 </div>
 </a>
@@ -412,9 +397,9 @@
 <span class="rank-number rank-other">5</span>
 <div class="flex-1 min-w-0">
 <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">A complete guide to building a theme park</h3>
-<div class="flex items-cobtain gap-2 mt-1 text-xs text-slate-400">
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
 <span class="category-tag category-park text-[10px] px-2 py-0">park</span>
-<span>1.5w reading</span>
+<span>15K reads</span>
 </div>
 </div>
 </a>
@@ -422,16 +407,15 @@
 </ol>
 </div>
 </div>
- Latest guide 
 <div class="lg:col-span-2">
-<div class="flex items-cobtain justify-between mb-6">
-<div class="flex items-cobtain gap-2">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2">
 <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 <h2 class="text-xl md:text-2xl font-bold text-slate-900">Latest guide</h2>
 </div>
-<a class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-cobtain gap-1" href="guides.html">
+<a class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1" href="guides.html">
                 More
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -439,7 +423,6 @@
 </a>
 </div>
 <div class="grid sm:grid-cols-2 gap-6">
- Latest 1 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/summer-event-guide.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
 <img alt="Summer event guide thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-summer-event.jpg"/>
@@ -447,13 +430,12 @@
 <div class="flex-1 min-w-0">
 <span class="category-tag category-event text-[10px] mb-2">Event Guides</span>
 <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">Complete guide to the summer event "Synchronized Summer Shine"</h3>
-<div class="text-xs text-slate-400">2026-08-07 · 3.1w reading</div>
+<div class="text-xs text-slate-400">2026-08-07 · 31K reads</div>
 </div>
 </a>
- Latest 2 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/mini-game-guide.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-<img alt="Mini game guide thumbnail" class="w-full h-full object-cover" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5z6hgis_ve_miaoda"/>
+<img alt="Mini game guide thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-mini-games.jpg"/>
 </div>
 <div class="flex-1 min-w-0">
 <span class="category-tag category-minigame text-[10px] mb-2">mini games</span>
@@ -461,7 +443,6 @@
 <div class="text-xs text-slate-400">2026-08-05 · 9.8K reads</div>
 </div>
 </a>
- Latest 3 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/character-training-guide.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
 <img alt="Character development guide thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-character.jpg"/>
@@ -469,32 +450,29 @@
 <div class="flex-1 min-w-0">
 <span class="category-tag category-character text-[10px] mb-2">Character development</span>
 <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">A complete guide to character development and formation</h3>
-<div class="text-xs text-slate-400">2026-08-03 · 1.6w reading</div>
+<div class="text-xs text-slate-400">2026-08-03 · 16K reads</div>
 </div>
 </a>
- Latest 4 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/theme-park-build-guide.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-<img alt="Theme park construction thumbnail" class="w-full h-full object-cover" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda"/>
+<img alt="Theme park construction thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-theme-park.jpg"/>
 </div>
 <div class="flex-1 min-w-0">
 <span class="category-tag category-park text-[10px] mb-2">theme park</span>
 <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">A complete guide to building a theme park</h3>
-<div class="text-xs text-slate-400">2026-08-01 · 1.5w reading</div>
+<div class="text-xs text-slate-400">2026-08-01 · 15K reads</div>
 </div>
 </a>
- Latest 5 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/rhythm-high-score-tips.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-<img alt="Rhythm Game Tips Thumbnail" class="w-full h-full object-cover" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"/>
+<img alt="Rhythm Game Tips Thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-rhythm.jpg"/>
 </div>
 <div class="flex-1 min-w-0">
 <span class="category-tag category-rhythm text-[10px] mb-2">Rhythm game</span>
 <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">Detailed explanation of high score techniques in rhythm games</h3>
-<div class="text-xs text-slate-400">2026-07-28 · 1.8w reading</div>
+<div class="text-xs text-slate-400">2026-07-28 · 18K reads</div>
 </div>
 </a>
- Latest 6 
 <a class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm" href="guides/beginner-guide.html">
 <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
 <img alt="Getting Started Guide Thumbnail" class="w-full h-full object-cover" loading="lazy" src="assets/cover-beginner.jpg"/>
@@ -502,7 +480,7 @@
 <div class="flex-1 min-w-0">
 <span class="category-tag category-beginner text-[10px] mb-2">Getting Started</span>
 <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">Getting Started: Get Started Quickly in 5 Minutes</h3>
-<div class="text-xs text-slate-400">2026-07-23 · 2.3w reading</div>
+<div class="text-xs text-slate-400">2026-07-23 · 23K reads</div>
 </div>
 </a>
 </div>
@@ -510,7 +488,6 @@
 </div>
 </div>
 </section>
- ===== Popular search topics for players ===== 
 <section aria-labelledby="popular-searches-title" class="py-14 md:py-20 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
@@ -523,7 +500,7 @@
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
 <div class="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-5">
-<h3 class="font-bold text-slate-900 mb-4 flex items-cobtain gap-2"><span class="w-8 h-8 rounded-lg bg-indigo-500 text-white flex items-cobtain justify-cobtain">obtain</span>Getting started and downloading</h3>
+<h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-indigo-500 text-white flex items-center justify-center">GO</span>Getting Started and downloading</h3>
 <div class="flex flex-wrap gap-2">
 <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams Guide</a>
 <a class="search-topic" href="about.html">hololive Dreams release date</a>
@@ -535,7 +512,7 @@
 </div>
 </div>
 <div class="rounded-2xl border border-pink-100 bg-pink-50/60 p-5">
-<h3 class="font-bold text-slate-900 mb-4 flex items-cobtain gap-2"><span class="w-8 h-8 rounded-lg bg-pink-500 text-white flex items-cobtain justify-cobtain">horn</span>Characters and cards</h3>
+<h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-pink-500 text-white flex items-center justify-center">CH</span>Characters and cards</h3>
 <div class="flex flex-wrap gap-2">
 <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams characters</a>
 <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams cards</a>
@@ -547,7 +524,7 @@
 </div>
 </div>
 <div class="rounded-2xl border border-amber-100 bg-amber-50/60 p-5">
-<h3 class="font-bold text-slate-900 mb-4 flex items-cobtain gap-2"><span class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-cobtain justify-cobtain">draw</span>Drawing cards and resources</h3>
+<h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center">GA</span>Gacha and resources</h3>
 <div class="flex flex-wrap gap-2">
 <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams reroll guide</a>
 <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams gacha pity</a>
@@ -559,7 +536,7 @@
 </div>
 </div>
 <div class="rounded-2xl border border-sky-100 bg-sky-50/60 p-5">
-<h3 class="font-bold text-slate-900 mb-4 flex items-cobtain gap-2"><span class="w-8 h-8 rounded-lg bg-sky-500 text-white flex items-cobtain justify-cobtain">Play</span>Gameplay and content</h3>
+<h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-sky-500 text-white flex items-center justify-center">PL</span>Gameplay and content</h3>
 <div class="flex flex-wrap gap-2">
 <a class="search-topic" href="guides/rhythm-high-score-tips.html">hololive Dreams song list</a>
 <a class="search-topic" href="guides/rhythm-high-score-tips.html">hololive Dreams songs</a>
@@ -574,16 +551,14 @@
 <p class="mt-6 text-xs leading-relaxed text-slate-400">Not included: cheat, trainer, mod, APK, account buying and selling, abnormal error sentences, and repeated or low-related search terms that are inconsistent with the Chinese guide positioning of this site.</p>
 </div>
 </section>
- ===== YouTube video area ===== 
 <section class="py-14 md:py-20 bg-slate-900 text-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-cobtain mb-12">
+<div class="text-center mb-12">
 <div class="text-sm font-semibold text-pink-400 mb-2">VIDEO</div>
 <h2 class="text-2xl md:text-3xl font-bold mb-3">latest video</h2>
 <p class="text-slate-400 max-w-xl mx-auto">hololive Dreams official trailer, actual machine demonstration and wonderful performances</p>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
- Video 1 
 <div class="group">
 <div class="video-embed shadow-lg">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="hololive Dreams official trailer"></iframe>
@@ -593,7 +568,6 @@
 <p class="text-sm text-slate-400 mt-1">hololive Official Channel · 2026-07-22</p>
 </div>
 </div>
- Video 2 
 <div class="group">
 <div class="video-embed shadow-lg">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="hololive Dreams game real machine demonstration"></iframe>
@@ -603,7 +577,6 @@
 <p class="text-sm text-slate-400 mt-1">hololive Official Channel · 2026-07-15</p>
 </div>
 </div>
- Video 3 
 <div class="group">
 <div class="video-embed shadow-lg">
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="hololive Dreams Theme park gameplay introduction"></iframe>
@@ -617,14 +590,12 @@
 </div>
 </section>
 </main>
- ===== Footer ===== 
 <footer class="site-footer">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 <div class="grid md:grid-cols-4 gap-10">
- brand 
 <div class="md:col-span-1">
-<div class="flex items-cobtain gap-2 mb-4">
-<div class="w-9 h-9 rounded-lg gradient-bg flex items-cobtain justify-cobtain">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
 <span class="text-white font-bold text-sm">HD</span>
 </div>
 <span class="font-bold text-lg text-white">Holodori Guide</span>
@@ -650,7 +621,6 @@
 </a>
 </div>
 </div>
- Quick links 
 <div>
 <h4 class="font-semibold text-white mb-4">Guide Categories</h4>
 <ul class="space-y-2 text-sm">
@@ -679,7 +649,6 @@
 </ul>
 </div>
 </div>
- Disclaimer 
 <div class="mt-10 pt-8 border-t border-slate-800">
 <div class="text-xs text-slate-500 leading-relaxed mb-4">
 <strong class="text-slate-400">Disclaimer:</strong>

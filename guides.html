@@ -61,17 +61,16 @@
 }</script>
 </head>
 <body class="bg-slate-50">
- ===== Top navigation bar ===== 
 <header class="navbar fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-slate-200/60">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-cobtain justify-between h-16">
-<a class="flex items-cobtain gap-2 flex-shrink-0" href="index.html">
-<div class="w-9 h-9 rounded-lg gradient-bg flex items-cobtain justify-cobtain">
+<div class="flex items-center justify-between h-16">
+<a class="flex items-center gap-2 flex-shrink-0" href="index.html">
+<div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
 <span class="text-white font-bold text-sm">HD</span>
 </div>
 <span class="font-bold text-lg gradient-text hidden sm:inline">Holodori Guide</span>
 </a>
-<nav class="hidden md:flex items-cobtain gap-1">
+<nav class="hidden md:flex items-center gap-1">
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="index.html">Home</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 bg-indigo-50" href="guides.html">Guides</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="guides.html?cat=rhythm">Rhythm game</a>
@@ -79,7 +78,7 @@
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="guides.html?cat=event">Event Guides</a>
 <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors" href="about.html">About the game</a>
 </nav>
-<div class="flex items-cobtain gap-3">
+<div class="flex items-center gap-3">
 <form class="hidden sm:block relative" id="searchForm">
 <input aria-label="Search guide" class="search-input w-48 lg:w-64 h-9 pl-9 pr-4 rounded-full text-sm bg-slate-100/80" id="globalSearch" placeholder="Search guide..." type="search"/>
 <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
@@ -107,20 +106,16 @@
 </header>
 <main class="pt-24 pb-16">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- bread crumbs 
 <nav aria-label="breadcrumb" class="breadcrumb mb-6">
 <a href="index.html">Home</a>
 <span class="breadcrumb-separator">/</span>
 <span class="text-slate-400">Guides</span>
 </nav>
- Page title 
 <div class="mb-10">
 <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Guides</h1>
 <p class="text-slate-500 max-w-2xl">Gathering all hololive Dreams gameplay guides, from beginners to advanced skills, you can find the answers you need in one stop.</p>
 </div>
- Search bar + filter 
 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/60 mb-8">
- search box 
 <div class="mb-6">
 <div class="relative max-w-2xl">
 <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
@@ -131,7 +126,6 @@
 </form>
 </div>
 </div>
- Classification filter 
 <div class="mb-4">
 <div class="text-sm font-medium text-slate-700 mb-3">Guide Categories</div>
 <div class="flex flex-wrap gap-2">
@@ -144,12 +138,11 @@
 <button class="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-600 hover:text-indigo-600 border border-slate-200 transition-all" data-filter="beginner">Getting Started</button>
 </div>
 </div>
- sort 
-<div class="flex items-cobtain justify-between flex-wrap gap-3 pt-4 border-t border-slate-100">
+<div class="flex items-center justify-between flex-wrap gap-3 pt-4 border-t border-slate-100">
 <div class="text-sm text-slate-500">
-            common <span class="font-semibold text-slate-900">6</span> guide
+            Total <span class="font-semibold text-slate-900">6</span> guides
           </div>
-<div class="flex items-cobtain gap-2">
+<div class="flex items-center gap-2">
 <span class="text-sm text-slate-500">Sort by:</span>
 <select class="h-9 px-3 rounded-lg border border-slate-200 text-sm text-slate-700 bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100">
 <option>Latest releases</option>
@@ -159,157 +152,147 @@
 </div>
 </div>
 </div>
- Editor's Picks 
 <section class="mb-12">
-<h2 class="text-xl font-bold text-slate-900 mb-6 flex items-cobtain gap-2">
+<h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
 <svg class="w-5 h-5 text-amber-500" fill="currentColor" viewbox="0 0 24 24">
 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
 </svg>
-          Editor's Picks
         </h2>
 <div class="grid md:grid-cols-3 gap-6">
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="event" href="guides/summer-event-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="A complete guide to synchronizing summer activities with summer sparkle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
+<img alt="A complete guide to synchronizing summer activities with summer sparkle" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-event">Event Guides</span>
 <span class="absolute top-3 right-3 px-2 py-0.5 bg-rose-500 text-white text-xs font-bold rounded-full">NEW</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Complete guide to the summer event "Synchronized Summer Shine"</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">In-depth analysis of the miComet swimsuit card pool, overcoming difficulties in the chart of the new song Sugar Rush, and efficient token earning routes.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-07</span>
-<span>3.1w reading</span>
+<span>31K reads</span>
 </div>
 </div>
 </a>
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="rhythm" href="guides/rhythm-high-score-tips.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Rhythm game high score skills from novice to expert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"/>
+<img alt="Rhythm game high score skills from novice to expert" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-rhythm.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-rhythm">Rhythm game</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Rhythm game high score skills: the path to advancement from novice to expert</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Master the essence of judgment, the combination of COMBO combos and character skills, and easily achieve high scores in the whole company.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-28</span>
-<span>1.8w reading</span>
+<span>18K reads</span>
 </div>
 </div>
 </a>
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="beginner" href="guides/beginner-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Beginner's guide to get started quickly in 5 minutes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
+<img alt="Beginner's guide to get started quickly in 5 minutes" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-beginner">Getting Started</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Beginner's Guide: Get Started Quickly in 5 Minutes hololive Dreams</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">From downloading and installing to basic operations, we will guide you step by step into the dream world of rhythm and park.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-23</span>
-<span>2.3w reading</span>
+<span>23K reads</span>
 </div>
 </div>
 </a>
 </div>
 </section>
- All guide grids 
 <section>
 <h2 class="text-xl font-bold text-slate-900 mb-6">All strategies</h2>
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
- card 1 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="event" href="guides/summer-event-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Summer Activities Synchronized Summer Sparkle Guide Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
+<img alt="Summer Activities Synchronized Summer Sparkle Guide Cover" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-event">Event Guides</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Complete guide to the summer event "Synchronized Summer Shine"</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Analysis of miComet swimsuit card pool, new song Sugar Rush chart guide, and efficient token earning route.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-07</span>
-<span>3.1w reading</span>
+<span>31K reads</span>
 </div>
 </div>
 </a>
- card 2 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="minigame" href="guides/mini-game-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="List of mini-games and rewards" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5z6hgis_ve_miaoda"/>
+<img alt="List of mini-games and rewards" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-mini-games.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-minigame">mini games</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Complete Overview of mini-game gameplay and rewards</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Full analysis of multiplayer online, party gameplay, and reward mechanisms, a must-read guide for daily resource farming.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-05</span>
 <span>9.8K reads</span>
 </div>
 </div>
 </a>
- card 3 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="character" href="guides/character-training-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Character Development and Team Building Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-character.jpg"/>
+<img alt="Character Development and Team Building Guide" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-character.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-character">Character development</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">A complete guide to character development and formation</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Rarity system, skill combination, team building guide and resource allocation recommendations.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-03</span>
-<span>1.6w reading</span>
+<span>16K reads</span>
 </div>
 </div>
 </a>
- card 4 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="park" href="guides/theme-park-build-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="A complete guide to building a theme park" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda"/>
+<img alt="A complete guide to building a theme park" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-theme-park.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-park">theme park</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">A complete guide to building a theme park: creating a dream park</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">The economic system, facility layout, mission routes, and all aspects of the park's operation will be explained in one go.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-08-01</span>
-<span>1.5w reading</span>
+<span>15K reads</span>
 </div>
 </div>
 </a>
- card 5 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="rhythm" href="guides/rhythm-high-score-tips.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Rhythm game high score tips" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"/>
+<img alt="Rhythm game high score tips" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-rhythm.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-rhythm">Rhythm game</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Rhythm Game High Score Tips: From Novice to Expert</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">Master the essence of judgment, the combination of COMBO combos and character skills, and easily achieve high scores in the whole company.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-28</span>
-<span>1.8w reading</span>
+<span>18K reads</span>
 </div>
 </div>
 </a>
- Card 6 
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="beginner" href="guides/beginner-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
-<img alt="Beginner's guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
+<img alt="Beginner's guide" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-beginner.jpg"/>
 <span class="absolute top-3 left-3 category-tag category-beginner">Getting Started</span>
 </div>
 <div class="p-5">
 <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">Beginner's guide: Get started quickly in 5 minutes</h3>
 <p class="text-sm text-slate-500 line-clamp-2 mb-4">From downloading and installing to basic operations, we will guide you step by step into the dream world of rhythm and park.</p>
-<div class="flex items-cobtain justify-between text-xs text-slate-400">
+<div class="flex items-center justify-between text-xs text-slate-400">
 <span>2026-07-23</span>
-<span>2.3w reading</span>
+<span>23K reads</span>
 </div>
 </div>
 </a>
 </div>
- Pagination 
-<div class="flex items-cobtain justify-cobtain gap-2 mt-12">
+<div class="flex items-center justify-center gap-2 mt-12">
 <a aria-label="Previous page" class="pagination-btn" href="#" onclick="return false;">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -329,13 +312,12 @@
 </section>
 </div>
 </main>
- ===== Footer ===== 
 <footer class="site-footer">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 <div class="grid md:grid-cols-4 gap-10">
 <div class="md:col-span-1">
-<div class="flex items-cobtain gap-2 mb-4">
-<div class="w-9 h-9 rounded-lg gradient-bg flex items-cobtain justify-cobtain">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
 <span class="text-white font-bold text-sm">HD</span>
 </div>
 <span class="font-bold text-lg text-white">Holodori Guide</span>
