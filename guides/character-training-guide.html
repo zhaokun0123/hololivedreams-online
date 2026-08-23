@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="creative-medium" content="other">
+  <title>角色养成与编组完全指南 | hololive Dreams攻略</title>
+  <meta name="description" content="hololive Dreams角色养成与编组完全指南，稀有度系统解析、技能搭配、编组策略、卡池抽取建议与资源分配方案。">
+  <meta name="keywords" content="hololive Dreams角色养成, 编组攻略, 角色培养, 卡池攻略">
+  <link rel="canonical" href="https://hololivedreams.online/guides/character-training-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="角色养成与编组完全指南 | hololive Dreams攻略">
+  <meta property="og:description" content="稀有度系统、技能搭配、编组策略与资源分配建议全解析。">
+  <meta property="og:image" content="../assets/cover-character.jpg">
+  <meta property="og:url" content="https://hololivedreams.online/guides/character-training-guide.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="角色养成与编组完全指南">
+  <meta name="twitter:description" content="稀有度系统、技能搭配、编组策略全解析。">
+  <meta name="twitter:image" content="../assets/cover-character.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='50%' stop-color='%238b5cf6'/><stop offset='100%' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='65' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>HD</text></svg>">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"角色养成与编组完全指南","description":"hololive Dreams角色养成与编组完全指南，稀有度系统与技能搭配全解析。","image":"../assets/cover-character.jpg","datePublished":"2026-08-03","author":{"@type":"Person","name":"Holodori攻略组"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://hololivedreams.online/index.html"},{"@type":"ListItem","position":2,"name":"攻略中心","item":"https://hololivedreams.online/guides.html"},{"@type":"ListItem","position":3,"name":"角色养成指南","item":"https://hololivedreams.online/guides/character-training-guide.html"}]}</script>
+</head>
+<body class="bg-slate-50">
+  <div class="reading-progress" style="width: 0%;"></div>
+  <header class="navbar fixed top-0 left-0 right-0 z-40 bg-white/80 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center gap-2 flex-shrink-0"><div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center"><span class="text-white font-bold text-sm">HD</span></div><span class="font-bold text-lg gradient-text hidden sm:inline">Holodori攻略站</span></a>
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="../index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">首页</a>
+          <a href="../guides.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">攻略中心</a>
+          <a href="../guides.html?cat=rhythm" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">节奏游戏</a>
+          <a href="../guides.html?cat=park" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">主题乐园</a>
+          <a href="../guides.html?cat=event" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">活动攻略</a>
+          <a href="../about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">关于游戏</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <form id="searchForm" class="hidden sm:block relative"><input type="search" id="globalSearch" class="search-input w-48 lg:w-64 h-9 pl-9 pr-4 rounded-full text-sm bg-slate-100/80" placeholder="搜索攻略..."><svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></form>
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-slate-200 pt-3"><nav class="flex flex-col gap-1"><a href="../index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">首页</a><a href="../guides.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">攻略中心</a><a href="../guides.html?cat=rhythm" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">节奏游戏</a><a href="../guides.html?cat=park" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">主题乐园</a><a href="../guides.html?cat=event" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">活动攻略</a><a href="../about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600">关于游戏</a></nav></div>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="breadcrumb mb-6"><a href="../index.html">首页</a><span class="breadcrumb-separator">/</span><a href="../guides.html">攻略中心</a><span class="breadcrumb-separator">/</span><span class="text-slate-400">角色养成</span></nav>
+
+      <div class="grid lg:grid-cols-4 gap-10">
+        <article class="lg:col-span-3">
+          <header class="mb-8">
+            <span class="category-tag category-character mb-4">角色养成</span>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">角色养成与编组完全指南</h1>
+            <p class="text-lg text-slate-500 mb-6">稀有度系统、觉醒突破、技能搭配、编组策略——打造你的最强梦幻阵容。</p>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-400 pb-6 border-b border-slate-200">
+              <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full gradient-bg flex items-center justify-center text-white text-xs font-bold">攻</div><span>Holodori攻略组</span></div>
+              <span>·</span><span>2026-08-03</span><span>·</span><span>阅读约 11 分钟</span><span>·</span><span>1.6w 浏览</span>
+            </div>
+          </header>
+
+          <div class="rounded-2xl overflow-hidden mb-10 shadow-lg">
+            <img src="../assets/cover-character.jpg" alt="hololive Dreams登场角色集合图" class="w-full h-auto">
+          </div>
+
+          <div class="article-content">
+            <p>hololive Dreams 拥有超过 50 名可操控的 hololive 成员，涵盖各世代和各分支。如何选择培养对象、如何合理编组队伍、如何分配有限的资源——是每一位玩家都要面对的问题。这份指南将从基础到进阶，带你全面了解角色养成系统。</p>
+
+            <h2 id="step1">角色稀有度系统</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">1</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">★3 / ★4 / ★5 的区别与获取</h3>
+                <p>游戏中的角色按稀有度分为三个等级：</p>
+                <ul>
+                  <li><strong>★3（三星）：</strong>最常见的稀有度，容易获得。前期可以作为过渡使用，但后期强度有限。</li>
+                  <li><strong>★4（四星）：</strong>中坚力量，获取难度适中，技能实用，是大多数玩家队伍的主力。</li>
+                  <li><strong>★5（五星）：</strong>最高稀有度，拥有最强的属性和技能。主要通过限定卡池获取。</li>
+                </ul>
+                <p>获取方式包括：卡池抽取、任务奖励、活动兑换、初始赠送等。其中<strong>活动限定的 ★5 角色</strong>往往强度和收藏价值都很高。</p>
+
+                <div class="tip-box tip">
+                  <div class="tip-box-title">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    小贴士
+                  </div>
+                  <div class="tip-box-content">不要平均分配资源，集中培养一队主力效率更高。先把一队练满，再考虑第二队。</div>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="step2">等级提升与觉醒</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">2</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">升级、突破与觉醒</h3>
+                <p>角色的成长包含多个维度：</p>
+                <ul>
+                  <li><strong>等级提升：</strong>使用经验材料升级角色，提升基础属性。等级受角色稀有度和突破阶段限制。</li>
+                  <li><strong>突破解锁：</strong>达到当前等级上限后，使用突破材料解锁更高等级上限。</li>
+                  <li><strong>觉醒突破：</strong>使用相同角色的重复卡进行觉醒，每觉醒一次提升角色属性和技能等级上限。★5角色满觉醒需要多张重复卡。</li>
+                </ul>
+                <p>对于平民玩家来说，<strong>高觉醒的 ★4 角色</strong>往往比低觉醒的 ★5 角色更强，不要一味追求稀有度。</p>
+              </div>
+            </div>
+
+            <h2 id="step3">技能系统理解</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">3</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0">主动技能与被动技能</h3>
+                <p>每个角色都有多种技能，了解它们才能合理搭配：</p>
+                <ul>
+                  <li><strong>队长技能：</strong>只有放在队长位置时才生效。通常是全队属性加成或特定条件下的分数提升。</li>
+                  <li><strong>主动技能：</strong>在节奏游戏中通过技能条触发，有冷却时间。效果包括分数加成、判定提升、回复生命等。</li>
+                  <li><strong>被动技能：</strong>常驻效果，自动生效。属性加成、特殊条件触发的加成等。</li>
+                </ul>
+                <p>升级技能需要技能材料，优先级通常是：<strong>队长技能 > 核心主动技能 > 被动技能</strong>。</p>
+              </div>
+            </div>
+
+            <h2 id="step4">编组策略</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">4</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">队长技能 + 成员技能 + 颜色属性</h3>
+                <p>编组是影响得分的关键因素。一个好的队伍需要兼顾以下几点：</p>
+                <ol>
+                  <li><strong>颜色属性统一：</strong>全队颜色与歌曲属性一致时，获得最大加成。优先组纯色队。</li>
+                  <li><strong>队长技能匹配：</strong>选择能最大化队伍收益的队长。纯色队优先选同色加成的队长技能。</li>
+                  <li><strong>成员技能互补：</strong>主动技能的种类要搭配合理——得分+判定+回复的组合最为实用。</li>
+                  <li><strong>副卡选择：</strong>支援位选择能提供更多加成的角色，不一定是稀有度最高的。</li>
+                </ol>
+                <p>建议前期每种颜色各培养一支主力队伍，应对不同属性的歌曲。</p>
+              </div>
+            </div>
+
+            <h2 id="step5">卡池抽取建议</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">5</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">活动限定卡池优先级最高</h3>
+                <p>钻石有限的情况下，卡池抽取需要有所取舍：</p>
+                <ul>
+                  <li><strong>活动限定卡池：</strong>优先级最高。限定角色过了活动就不复刻（或很久之后才复刻），错过就是永远。</li>
+                  <li><strong>强力常驻卡池：</strong>次之。有特别强力的常驻角色时可以抽，但常驻角色总有歪到的机会。</li>
+                  <li><strong>普通常驻池：</strong>不建议特意投入资源。等歪即可。</li>
+                </ul>
+                <p>抽卡前先规划好预算，不要上头。存够一井（保底次数）再抽是最稳妥的做法。</p>
+
+                <div class="tip-box note">
+                  <div class="tip-box-title">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    注意
+                  </div>
+                  <div class="tip-box-content">抽卡是游戏的乐趣之一，但也要量力而行。理性消费，享受游戏本身才是最重要的。</div>
+                </div>
+              </div>
+            </div>
+
+            <h2 id="step6">资源分配</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">6</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">有限资源优先培养主力队伍</h3>
+                <p>养成资源（经验、突破材料、技能书）在游戏中始终是稀缺的。合理的分配策略是：</p>
+                <ul>
+                  <li><strong>优先主力队伍：</strong>集中资源把一队练到当前最高等级，再考虑下一队。</li>
+                  <li><strong>活动资源优先活动角色：</strong>活动期间获得的特殊材料，用来强化活动角色效率最高。</li>
+                  <li><strong>不要平均主义：</strong>把所有角色都升到30级，不如把一个角色升到60级。高等级角色才能参加高难度内容。</li>
+                  <li><strong>规划材料用途：</strong>活动前先看一下需要什么材料，提前储备。</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 id="step7">亲密度解锁</h2>
+            <div class="flex gap-4 my-6">
+              <div class="step-number">7</div>
+              <div class="flex-1">
+                <h3 style="margin-top: 0;">通过互动提升亲密度解锁剧情</h3>
+                <p>除了战斗数值，角色还有亲密度系统。亲密度提升不仅有属性加成，更重要的是能解锁专属剧情：</p>
+                <ul>
+                  <li><strong>乐园互动：</strong>在乐园中与成员互动、赠送礼物可以提升亲密度</li>
+                  <li><strong>歌曲演出：</strong>使用该角色进行节奏游戏也会增加亲密度</li>
+                  <li><strong>个人剧情：</strong>亲密度达到一定等级解锁，每个角色都有独立的故事线</li>
+                  <li><strong>纪念照片：</strong>特定亲密度等级可获得与角色的合照</li>
+                </ul>
+                <p>对于喜欢的角色，多多互动吧——这才是养成游戏的灵魂所在。</p>
+              </div>
+            </div>
+
+            <h2 id="summary">结语</h2>
+            <p>角色养成是一个长线过程，不要急于求成。选择自己喜欢的角色，慢慢培养，慢慢解锁她们的故事——这才是 hololive Dreams 角色系统的真正魅力。</p>
+            <p>希望这份指南能帮你少走弯路，早日组建出自己心目中的梦幻阵容。</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-12 pt-8 border-t border-slate-200">
+            <a href="theme-park-build-guide.html" class="group p-5 rounded-2xl bg-white border border-slate-200 hover:border-indigo-300 transition-colors">
+              <div class="text-sm text-slate-400 mb-2 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>上一篇</div>
+              <div class="font-semibold text-slate-900 group-hover:text-indigo-600">主题乐园建造全攻略</div>
+            </a>
+            <a href="mini-game-guide.html" class="group p-5 rounded-2xl bg-white border border-slate-200 hover:border-indigo-300 transition-colors text-right">
+              <div class="text-sm text-slate-400 mb-2 flex items-center gap-1 justify-end">下一篇<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+              <div class="font-semibold text-slate-900 group-hover:text-indigo-600">迷你游戏玩法与奖励一览</div>
+            </a>
+          </div>
+        </article>
+
+        <aside class="lg:col-span-1">
+          <div class="sticky top-24 space-y-8">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/60">
+              <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>文章目录</h3>
+              <ul class="toc-list">
+                <li><a href="#step1" class="active">角色稀有度系统</a></li>
+                <li><a href="#step2">等级提升与觉醒</a></li>
+                <li><a href="#step3">技能系统理解</a></li>
+                <li><a href="#step4">编组策略</a></li>
+                <li><a href="#step5">卡池抽取建议</a></li>
+                <li><a href="#step6">资源分配</a></li>
+                <li><a href="#step7">亲密度解锁</a></li>
+                <li><a href="#summary">结语</a></li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/60">
+              <h3 class="font-bold text-slate-900 mb-4">热门攻略</h3>
+              <ul class="space-y-4">
+                <li><a href="summer-event-guide.html" class="group flex gap-3"><div class="w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden"><img src="../assets/cover-summer-event.jpg" alt="夏季活动" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-1 min-w-0"><h4 class="text-sm font-medium text-slate-900 group-hover:text-indigo-600 line-clamp-2">夏季活动完全攻略</h4><div class="text-xs text-slate-400 mt-1">3.1w 阅读</div></div></a></li>
+                <li><a href="beginner-guide.html" class="group flex gap-3"><div class="w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden"><img src="../assets/cover-beginner.jpg" alt="新手入门" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-1 min-w-0"><h4 class="text-sm font-medium text-slate-900 group-hover:text-indigo-600 line-clamp-2">新手入门指南</h4><div class="text-xs text-slate-400 mt-1">2.3w 阅读</div></div></a></li>
+                <li><a href="rhythm-high-score-tips.html" class="group flex gap-3"><div class="w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden"><img src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda" alt="节奏技巧" class="w-full h-full object-cover" loading="lazy"></div><div class="flex-1 min-w-0"><h4 class="text-sm font-medium text-slate-900 group-hover:text-indigo-600 line-clamp-2">节奏游戏高分技巧</h4><div class="text-xs text-slate-400 mt-1">1.8w 阅读</div></div></a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section class="mt-16 pt-12 border-t border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">相关推荐</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="rhythm-high-score-tips.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60"><div class="relative aspect-[4/3] overflow-hidden"><img src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda" alt="节奏游戏" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"><span class="absolute top-3 left-3 category-tag category-rhythm">节奏游戏</span></div><div class="p-5"><h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">节奏游戏高分技巧</h3><div class="text-xs text-slate-400">2026-07-28 · 1.8w 阅读</div></div></a>
+          <a href="theme-park-build-guide.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60"><div class="relative aspect-[4/3] overflow-hidden"><img src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda" alt="主题乐园" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"><span class="absolute top-3 left-3 category-tag category-park">主题乐园</span></div><div class="p-5"><h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">主题乐园建造全攻略</h3><div class="text-xs text-slate-400">2026-08-01 · 1.5w 阅读</div></div></a>
+          <a href="summer-event-guide.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60"><div class="relative aspect-[4/3] overflow-hidden"><img src="../assets/cover-summer-event.jpg" alt="夏季活动" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"><span class="absolute top-3 left-3 category-tag category-event">活动攻略</span></div><div class="p-5"><h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">夏季活动「同步夏日闪耀」完全攻略</h3><div class="text-xs text-slate-400">2026-08-07 · 3.1w 阅读</div></div></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-1"><div class="flex items-center gap-2 mb-4"><div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center"><span class="text-white font-bold text-sm">HD</span></div><span class="font-bold text-lg text-white">Holodori攻略站</span></div><p class="text-sm text-slate-400 leading-relaxed">专注于 hololive Dreams 的非官方粉丝向攻略站。</p></div>
+        <div><h4 class="font-semibold text-white mb-4">攻略分类</h4><ul class="space-y-2 text-sm"><li><a href="../guides.html?cat=rhythm">节奏游戏攻略</a></li><li><a href="../guides.html?cat=park">主题乐园建造</a></li><li><a href="../guides.html?cat=character">角色养成指南</a></li><li><a href="../guides.html?cat=event">活动攻略</a></li></ul></div>
+        <div><h4 class="font-semibold text-white mb-4">关于</h4><ul class="space-y-2 text-sm"><li><a href="../about.html">游戏介绍</a></li><li><a href="../about.html#specs">配置要求</a></li><li><a href="../guides.html">全部攻略</a></li></ul></div>
+        <div><h4 class="font-semibold text-white mb-4">法律信息</h4><ul class="space-y-2 text-sm"><li><a href="../privacy.html">隐私政策</a></li><li><a href="../terms.html">使用条款</a></li></ul></div>
+      </div>
+      <div class="mt-10 pt-8 border-t border-slate-800"><div class="text-xs text-slate-500 leading-relaxed mb-4"><strong class="text-slate-400">免责声明：</strong>本网站为非官方粉丝向攻略网站，与 hololive、Cover Corp、QualiArts, Inc. 无任何官方关联。</div><div class="text-xs text-slate-600">&copy; 2026 Holodori攻略站. All game content and trademarks are property of their respective owners.</div></div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

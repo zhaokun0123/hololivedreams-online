@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="creative-medium" content="other">
+  <title>hololive Dreams 攻略站 | 节奏游戏、主题乐园、角色养成完全指南</title>
+  <meta name="description" content="提供hololive Dreams最新攻略，涵盖节奏游戏高分技巧、主题乐园建造、角色养成编组、迷你游戏玩法、活动攻略等，助你打造梦想乐园。">
+  <meta name="keywords" content="hololive Dreams, holodori, 攻略, 新手指南, tier list, reroll, characters, cards, team building, chest locations, codes, song list, PC, Steam, iOS, Android">
+  <link rel="canonical" href="https://hololivedreams.online/index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="hololive Dreams 攻略站 | 节奏游戏、主题乐园、角色养成完全指南">
+  <meta property="og:description" content="提供hololive Dreams最新攻略，涵盖节奏游戏高分技巧、主题乐园建造、角色养成编组、迷你游戏玩法、活动攻略等，助你打造梦想乐园。">
+  <meta property="og:image" content="assets/cover-beginner.jpg">
+  <meta property="og:url" content="https://hololivedreams.online/index.html">
+  <meta property="og:site_name" content="Holodori攻略站">
+  <meta property="og:locale" content="zh_CN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="hololive Dreams 攻略站 | 节奏游戏、主题乐园、角色养成完全指南">
+  <meta name="twitter:description" content="提供hololive Dreams最新攻略，涵盖节奏游戏高分技巧、主题乐园建造、角色养成编组、迷你游戏玩法、活动攻略等，助你打造梦想乐园。">
+  <meta name="twitter:image" content="assets/cover-beginner.jpg">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236366f1'/><stop offset='50%' stop-color='%238b5cf6'/><stop offset='100%' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='65' font-size='48' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>HD</text></svg>">
+
+  <!-- JSON-LD: VideoGame + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "hololive Dreams 攻略站",
+    "url": "https://hololivedreams.online/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hololivedreams.online/guides.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "hololive Dreams",
+    "alternateName": ["holodori", "holo梦"],
+    "description": "hololive Dreams 是一款融合节奏游戏与RPG养成的免费游玩作品，玩家可以在节奏演出中挑战官方MV谱面，与超过50名hololive成员一起建设梦想主题乐园。",
+    "gamePlatform": ["PC (Steam)", "iOS", "Android"],
+    "operatingSystem": "Windows 11 64-bit, iOS, Android",
+    "applicationCategory": "Game",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CNY",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "QualiArts, Inc."
+    },
+    "developer": [
+      {
+        "@type": "Organization",
+        "name": "QualiArts, Inc."
+      },
+      {
+        "@type": "Organization",
+        "name": "Cover Corp"
+      }
+    ],
+    "releaseDate": "2026-07-23",
+    "genre": ["Rhythm", "RPG"],
+    "numberOfPlayers": "1+",
+    "contentRating": "E10+"
+  }
+  </script>
+</head>
+<body class="bg-slate-50">
+
+  <!-- ===== 顶部导航栏 ===== -->
+  <header class="navbar fixed top-0 left-0 right-0 z-50 bg-white/80 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+          <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
+            <span class="text-white font-bold text-sm">HD</span>
+          </div>
+          <span class="font-bold text-lg gradient-text hidden sm:inline">Holodori攻略站</span>
+        </a>
+
+        <!-- 桌面导航 -->
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 bg-indigo-50">首页</a>
+          <a href="guides.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors">攻略中心</a>
+          <a href="guides.html?cat=rhythm" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors">节奏游戏</a>
+          <a href="guides.html?cat=park" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors">主题乐园</a>
+          <a href="guides.html?cat=event" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors">活动攻略</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors">关于游戏</a>
+        </nav>
+
+        <!-- 搜索框 + 移动端菜单按钮 -->
+        <div class="flex items-center gap-3">
+          <form id="searchForm" class="hidden sm:block relative">
+            <input
+              type="search"
+              id="globalSearch"
+              class="search-input w-48 lg:w-64 h-9 pl-9 pr-4 rounded-full text-sm bg-slate-100/80"
+              placeholder="搜索攻略..."
+              aria-label="搜索攻略">
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </form>
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="菜单">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 移动端菜单 -->
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-slate-200 pt-3">
+        <nav class="flex flex-col gap-1">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-indigo-600 bg-indigo-50">首页</a>
+          <a href="guides.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">攻略中心</a>
+          <a href="guides.html?cat=rhythm" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">节奏游戏</a>
+          <a href="guides.html?cat=park" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">主题乐园</a>
+          <a href="guides.html?cat=event" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">活动攻略</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50/60">关于游戏</a>
+        </nav>
+        <form id="searchFormMobile" class="mt-3 relative">
+          <input
+            type="search"
+            class="search-input w-full h-10 pl-10 pr-4 rounded-full text-sm bg-slate-100"
+            placeholder="搜索攻略...">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero 区域 ===== -->
+    <section class="hero-section pt-28 pb-20 md:pt-36 md:pb-28 text-white">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            夏季活动「同步夏日闪耀」进行中
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <span class="block">hololive Dreams</span>
+            <span class="block bg-gradient-to-r from-sky-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">完全攻略指南</span>
+          </h1>
+          <p class="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
+            从节奏游戏高分技巧到主题乐园建造，从角色养成编组到活动玩法攻略——<br class="hidden sm:block">
+            Play, Expand, Dreams，和50+ hololive 成员一起打造你的梦想乐园。
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="guides/beginner-guide.html" class="btn-primary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              新手快速入门
+            </a>
+            <a href="guides.html" class="btn-secondary">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+              浏览全部攻略
+            </a>
+          </div>
+
+          <!-- 快速数据 -->
+          <div class="grid grid-cols-3 gap-6 mt-14 max-w-lg">
+            <div>
+              <div class="text-3xl font-bold text-white">150+</div>
+              <div class="text-sm text-white/60 mt-1">收录曲目</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-white">50+</div>
+              <div class="text-sm text-white/60 mt-1">登场成员</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-white">6大</div>
+              <div class="text-sm text-white/60 mt-1">玩法系统</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 游戏分类导航 ===== -->
+    <section class="py-14 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">攻略分类导航</h2>
+          <p class="text-slate-500 max-w-xl mx-auto">涵盖游戏全部核心玩法，找到你需要的那一份攻略</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <a href="guides.html?cat=rhythm" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">节奏游戏</h3>
+            <p class="text-xs text-slate-500">谱面解析与高分技巧</p>
+          </a>
+
+          <a href="guides.html?cat=park" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">主题乐园</h3>
+            <p class="text-xs text-slate-500">设施建造与经济规划</p>
+          </a>
+
+          <a href="guides.html?cat=minigame" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">迷你游戏</h3>
+            <p class="text-xs text-slate-500">玩法说明与奖励攻略</p>
+          </a>
+
+          <a href="guides.html?cat=character" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">角色养成</h3>
+            <p class="text-xs text-slate-500">编组搭配与资源分配</p>
+          </a>
+
+          <a href="guides.html?cat=event" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-100 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-purple-500 to-violet-500 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">活动攻略</h3>
+            <p class="text-xs text-slate-500">限定活动玩法指南</p>
+          </a>
+
+          <a href="guides.html?cat=beginner" class="card-hover group p-6 rounded-2xl bg-gradient-to-br from-slate-50 to-gray-100 border border-slate-200 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-gradient-to-br from-slate-600 to-gray-700 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-slate-900 mb-1">新手入门</h3>
+            <p class="text-xs text-slate-500">从零开始快速上手</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 编辑精选 ===== -->
+    <section class="py-14 md:py-20 gradient-bg-soft">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between mb-10">
+          <div>
+            <div class="text-sm font-semibold text-indigo-600 mb-2">编辑精选</div>
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900">本周必读攻略</h2>
+          </div>
+          <a href="guides.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1">
+            查看全部
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 精选 1 -->
+          <a href="guides/beginner-guide.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="assets/cover-beginner.jpg"
+                alt="hololive Dreams 新手入门指南封面"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <span class="absolute top-3 left-3 category-tag category-beginner">新手入门</span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">新手入门指南：5分钟快速上手 hololive Dreams</h3>
+              <p class="text-sm text-slate-500 line-clamp-2 mb-4">从下载安装到基础操作，手把手带你进入节奏与乐园的梦幻世界。</p>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>2026-07-23</span>
+                <span>2.3w 阅读</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 精选 2 -->
+          <a href="guides/rhythm-high-score-tips.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"
+                alt="节奏游戏高分技巧封面图"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <span class="absolute top-3 left-3 category-tag category-rhythm">节奏游戏</span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">节奏游戏高分技巧：从新手到高手的进阶之路</h3>
+              <p class="text-sm text-slate-500 line-clamp-2 mb-4">掌握判定精髓、COMBO连击与角色技能搭配，轻松刷出全连高分。</p>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>2026-07-28</span>
+                <span>1.8w 阅读</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 精选 3 -->
+          <a href="guides/theme-park-build-guide.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda"
+                alt="主题乐园建造攻略封面图"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <span class="absolute top-3 left-3 category-tag category-park">主题乐园</span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">主题乐园建造全攻略：打造梦想中的梦幻乐园</h3>
+              <p class="text-sm text-slate-500 line-clamp-2 mb-4">经济系统、设施布局、任务路线，乐园运营的方方面面一次讲透。</p>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>2026-08-01</span>
+                <span>1.5w 阅读</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 精选 4 -->
+          <a href="guides/summer-event-guide.html" class="card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="assets/cover-summer-event.jpg"
+                alt="夏季活动同步夏日闪耀攻略封面"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy">
+              <span class="absolute top-3 left-3 category-tag category-event">活动攻略</span>
+              <span class="absolute top-3 right-3 px-2 py-0.5 bg-rose-500 text-white text-xs font-bold rounded-full">NEW</span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-slate-900 mb-2 line-clamp-2 group-hover:text-indigo-600 transition-colors">夏季活动「同步夏日闪耀」完全攻略</h3>
+              <p class="text-sm text-slate-500 line-clamp-2 mb-4">miComet泳装卡池解析、新曲Sugar Rush谱面攻略、代币高效刷取路线。</p>
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span>2026-08-07</span>
+                <span>3.1w 阅读</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 热门榜单 + 最新攻略 ===== -->
+    <section class="py-14 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- 热门榜单 -->
+          <div class="lg:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <svg class="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+              </svg>
+              <h2 class="text-xl md:text-2xl font-bold text-slate-900">热门攻略 TOP5</h2>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/60">
+              <ol class="space-y-4">
+                <li>
+                  <a href="guides/summer-event-guide.html" class="flex items-start gap-3 group">
+                    <span class="rank-number rank-1">1</span>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">夏季活动「同步夏日闪耀」完全攻略</h3>
+                      <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span class="category-tag category-event text-[10px] px-2 py-0">活动</span>
+                        <span>3.1w 阅读</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="guides/beginner-guide.html" class="flex items-start gap-3 group">
+                    <span class="rank-number rank-2">2</span>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">新手入门指南：5分钟快速上手</h3>
+                      <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span class="category-tag category-beginner text-[10px] px-2 py-0">入门</span>
+                        <span>2.3w 阅读</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="guides/rhythm-high-score-tips.html" class="flex items-start gap-3 group">
+                    <span class="rank-number rank-3">3</span>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">节奏游戏高分技巧：从新手到高手</h3>
+                      <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span class="category-tag category-rhythm text-[10px] px-2 py-0">节奏</span>
+                        <span>1.8w 阅读</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="guides/character-training-guide.html" class="flex items-start gap-3 group">
+                    <span class="rank-number rank-other">4</span>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">角色养成与编组完全指南</h3>
+                      <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span class="category-tag category-character text-[10px] px-2 py-0">角色</span>
+                        <span>1.6w 阅读</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="guides/theme-park-build-guide.html" class="flex items-start gap-3 group">
+                    <span class="rank-number rank-other">5</span>
+                    <div class="flex-1 min-w-0">
+                      <h3 class="font-medium text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2">主题乐园建造全攻略</h3>
+                      <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span class="category-tag category-park text-[10px] px-2 py-0">乐园</span>
+                        <span>1.5w 阅读</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- 最新攻略 -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h2 class="text-xl md:text-2xl font-bold text-slate-900">最新攻略</h2>
+              </div>
+              <a href="guides.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1">
+                更多
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <!-- 最新 1 -->
+              <a href="guides/summer-event-guide.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="assets/cover-summer-event.jpg"
+                    alt="夏季活动攻略缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-event text-[10px] mb-2">活动攻略</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">夏季活动「同步夏日闪耀」完全攻略</h3>
+                  <div class="text-xs text-slate-400">2026-08-07 · 3.1w 阅读</div>
+                </div>
+              </a>
+
+              <!-- 最新 2 -->
+              <a href="guides/mini-game-guide.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5z6hgis_ve_miaoda"
+                    alt="迷你游戏攻略缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-minigame text-[10px] mb-2">迷你游戏</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">迷你游戏玩法与奖励完全一览</h3>
+                  <div class="text-xs text-slate-400">2026-08-05 · 9.8k 阅读</div>
+                </div>
+              </a>
+
+              <!-- 最新 3 -->
+              <a href="guides/character-training-guide.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="assets/cover-character.jpg"
+                    alt="角色养成攻略缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-character text-[10px] mb-2">角色养成</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">角色养成与编组完全指南</h3>
+                  <div class="text-xs text-slate-400">2026-08-03 · 1.6w 阅读</div>
+                </div>
+              </a>
+
+              <!-- 最新 4 -->
+              <a href="guides/theme-park-build-guide.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk5vwxsjs_ve_miaoda"
+                    alt="主题乐园建造缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-park text-[10px] mb-2">主题乐园</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">主题乐园建造全攻略</h3>
+                  <div class="text-xs text-slate-400">2026-08-01 · 1.5w 阅读</div>
+                </div>
+              </a>
+
+              <!-- 最新 5 -->
+              <a href="guides/rhythm-high-score-tips.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="/spark/app/app_17c9ps8s6wb/runtime/api/v1/storage/object/bucket_aadkqku6j24du_static/static%2Faadkqk6oje4cs_ve_miaoda"
+                    alt="节奏游戏技巧缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-rhythm text-[10px] mb-2">节奏游戏</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">节奏游戏高分技巧详解</h3>
+                  <div class="text-xs text-slate-400">2026-07-28 · 1.8w 阅读</div>
+                </div>
+              </a>
+
+              <!-- 最新 6 -->
+              <a href="guides/beginner-guide.html" class="card-hover group flex gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+                <div class="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                  <img
+                    src="assets/cover-beginner.jpg"
+                    alt="新手入门指南缩略图"
+                    class="w-full h-full object-cover"
+                    loading="lazy">
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="category-tag category-beginner text-[10px] mb-2">新手入门</span>
+                  <h3 class="font-semibold text-slate-900 text-sm group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">新手入门：5分钟快速上手</h3>
+                  <div class="text-xs text-slate-400">2026-07-23 · 2.3w 阅读</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 玩家热门搜索主题 ===== -->
+    <section class="py-14 md:py-20 bg-white" aria-labelledby="popular-searches-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div>
+            <div class="text-sm font-semibold text-indigo-600 mb-2">POPULAR SEARCHES</div>
+            <h2 id="popular-searches-title" class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">玩家热门搜索</h2>
+            <p class="text-slate-500 max-w-2xl">已从搜索词中去除重复、报错、外挂与账号交易等低质量内容，保留真正适合攻略站的玩法需求。</p>
+          </div>
+          <a href="guides.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700">查看全部攻略 →</a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-5">
+            <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-indigo-500 text-white flex items-center justify-center">入</span>入门与下载</h3>
+            <div class="flex flex-wrap gap-2">
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams 攻略</a>
+              <a class="search-topic" href="about.html">hololive Dreams release date</a>
+              <a class="search-topic" href="about.html#specs">hololive Dreams PC</a>
+              <a class="search-topic" href="about.html#official">hololive Dreams Steam</a>
+              <a class="search-topic" href="about.html#official">hololive Dreams download</a>
+              <a class="search-topic" href="about.html#official">hololive Dreams iOS / Android</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams gameplay</a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-pink-100 bg-pink-50/60 p-5">
+            <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-pink-500 text-white flex items-center justify-center">角</span>角色与卡牌</h3>
+            <div class="flex flex-wrap gap-2">
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams characters</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams cards</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams tier list</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams all 5 stars</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams team building</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams teams</a>
+              <a class="search-topic" href="guides/character-training-guide.html">hololive Dreams stats</a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-amber-100 bg-amber-50/60 p-5">
+            <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center">抽</span>抽卡与资源</h3>
+            <div class="flex flex-wrap gap-2">
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams reroll guide</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams gacha pity</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams banner</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams codes</a>
+              <a class="search-topic" href="guides/theme-park-build-guide.html">hololive Dreams chest locations</a>
+              <a class="search-topic" href="guides/theme-park-build-guide.html">hololive Dreams treasure chest</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams leaderboard</a>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-sky-100 bg-sky-50/60 p-5">
+            <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-sky-500 text-white flex items-center justify-center">玩</span>玩法与内容</h3>
+            <div class="flex flex-wrap gap-2">
+              <a class="search-topic" href="guides/rhythm-high-score-tips.html">hololive Dreams song list</a>
+              <a class="search-topic" href="guides/rhythm-high-score-tips.html">hololive Dreams songs</a>
+              <a class="search-topic" href="guides/summer-event-guide.html">hololive Dreams summer event</a>
+              <a class="search-topic" href="guides/mini-game-guide.html">hololive Dreams mini games</a>
+              <a class="search-topic" href="guides/theme-park-build-guide.html">hololive Dreams theme park</a>
+              <a class="search-topic" href="guides/beginner-guide.html">hololive Dreams controller</a>
+              <a class="search-topic" href="guides.html">hololive Dreams hidden achievements</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-6 text-xs leading-relaxed text-slate-400">未收录：cheat、trainer、mod、APK、账号买卖、异常报错句，以及与本站中文攻略定位不符的重复或低相关搜索词。</p>
+      </div>
+    </section>
+
+    <!-- ===== YouTube 视频区域 ===== -->
+    <section class="py-14 md:py-20 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <div class="text-sm font-semibold text-pink-400 mb-2">VIDEO</div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">最新视频</h2>
+          <p class="text-slate-400 max-w-xl mx-auto">hololive Dreams 官方预告、实机演示与精彩演出</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 视频 1 -->
+          <div class="group">
+            <div class="video-embed shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="hololive Dreams 官方预告片"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-semibold text-white group-hover:text-pink-300 transition-colors line-clamp-2">hololive Dreams 正式发售预告片</h3>
+              <p class="text-sm text-slate-400 mt-1">hololive 官方频道 · 2026-07-22</p>
+            </div>
+          </div>
+
+          <!-- 视频 2 -->
+          <div class="group">
+            <div class="video-embed shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="hololive Dreams 游戏实机演示"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-semibold text-white group-hover:text-pink-300 transition-colors line-clamp-2">节奏游戏实机演示：Shiny Smily Story</h3>
+              <p class="text-sm text-slate-400 mt-1">hololive 官方频道 · 2026-07-15</p>
+            </div>
+          </div>
+
+          <!-- 视频 3 -->
+          <div class="group">
+            <div class="video-embed shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="hololive Dreams 主题乐园玩法介绍"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-semibold text-white group-hover:text-pink-300 transition-colors line-clamp-2">主题乐园玩法介绍：和成员们一起建造梦想乐园</h3>
+              <p class="text-sm text-slate-400 mt-1">hololive 官方频道 · 2026-07-10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="site-footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-4 gap-10">
+        <!-- 品牌 -->
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-lg gradient-bg flex items-center justify-center">
+              <span class="text-white font-bold text-sm">HD</span>
+            </div>
+            <span class="font-bold text-lg text-white">Holodori攻略站</span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">
+            专注于 hololive Dreams 的非官方粉丝向攻略站，为玩家提供节奏游戏、主题乐园、角色养成等全方位游戏指南。
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Steam">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.605 0-2.977-1.116-3.331-2.629L.436 14.84C1.586 20.31 6.277 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.39 18.574c0 .975.795 1.767 1.773 1.767.979 0 1.773-.792 1.773-1.767s-.794-1.767-1.773-1.767c-.24 0-.47.049-.685.137l-1.552-.645c-.16.37-.248.774-.248 1.195l.712.28zm10.535-9.664c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.662 0 3.015-1.35 3.015-3.015zm-5.273-.002c0-1.252 1.01-2.263 2.258-2.263s2.258 1.011 2.258 2.263-1.01 2.263-2.258 2.263-2.258-1.011-2.258-2.263z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 快速链接 -->
+        <div>
+          <h4 class="font-semibold text-white mb-4">攻略分类</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="guides.html?cat=rhythm">节奏游戏攻略</a></li>
+            <li><a href="guides.html?cat=park">主题乐园建造</a></li>
+            <li><a href="guides.html?cat=character">角色养成指南</a></li>
+            <li><a href="guides.html?cat=minigame">迷你游戏玩法</a></li>
+            <li><a href="guides.html?cat=event">活动攻略</a></li>
+            <li><a href="guides.html?cat=beginner">新手入门</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-4">关于</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html">游戏介绍</a></li>
+            <li><a href="about.html#specs">配置要求</a></li>
+            <li><a href="about.html#official">官方链接</a></li>
+            <li><a href="guides.html">全部攻略</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-4">法律信息</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="privacy.html">隐私政策</a></li>
+            <li><a href="terms.html">使用条款</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 免责声明 -->
+      <div class="mt-10 pt-8 border-t border-slate-800">
+        <div class="text-xs text-slate-500 leading-relaxed mb-4">
+          <strong class="text-slate-400">免责声明：</strong>
+          本网站为非官方粉丝向攻略网站，与 hololive、Cover Corp、QualiArts, Inc. 无任何官方关联。
+          游戏名称、角色、图片及相关素材的版权归其各自所有者所有。本站内容仅供学习交流之用，
+          请勿用于商业用途。如有侵权，请联系我们进行删除。
+        </div>
+        <div class="text-xs text-slate-600">
+          &copy; 2026 Holodori攻略站. All game content and trademarks are property of their respective owners.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
