@@ -140,7 +140,7 @@
 </div>
 <div class="flex items-center justify-between flex-wrap gap-3 pt-4 border-t border-slate-100">
 <div class="text-sm text-slate-500">
-            Total <span class="font-semibold text-slate-900">6</span> guides
+            Total <span id="guideCount" class="font-semibold text-slate-900">6</span> guides
           </div>
 <div class="flex items-center gap-2">
 <span class="text-sm text-slate-500">Sort by:</span>
@@ -205,8 +205,8 @@
 </div>
 </section>
 <section>
-<h2 class="text-xl font-bold text-slate-900 mb-6">All strategies</h2>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<h2 class="text-xl font-bold text-slate-900 mb-6">All Guides</h2>
+<div id="guideGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 <a class="guide-card card-hover group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60" data-category="event" href="guides/summer-event-guide.html">
 <div class="relative aspect-[4/3] overflow-hidden">
 <img alt="Summer Activities Synchronized Summer Sparkle Guide Cover" class="w-full h-full object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-500" loading="lazy" src="assets/cover-summer-event.jpg"/>
@@ -292,23 +292,8 @@
 </div>
 </a>
 </div>
-<div class="flex items-center justify-center gap-2 mt-12">
-<a aria-label="Previous page" class="pagination-btn" href="#" onclick="return false;">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-<a class="pagination-btn active" href="#" onclick="return false;">1</a>
-<a class="pagination-btn" href="#" onclick="return false;">2</a>
-<a class="pagination-btn" href="#" onclick="return false;">3</a>
-<span class="pagination-btn" style="border-color: transparent; background: transparent;">...</span>
-<a class="pagination-btn" href="#" onclick="return false;">10</a>
-<a aria-label="Next page" class="pagination-btn" href="#" onclick="return false;">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</a>
-</div>
+<div id="guideEmptyState" class="hidden rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center text-slate-500">No guides match your current filters.</div>
+<nav id="guidePagination" class="flex items-center justify-center gap-2 mt-12" aria-label="Guide pagination"></nav>
 </section>
 </div>
 </main>
@@ -371,6 +356,6 @@
 </div>
 </div>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20260823-pagination"></script>
 </body>
 </html>

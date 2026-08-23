@@ -666,3 +666,7 @@ body {
   color: #4f46e5;
   box-shadow: 0 6px 18px rgba(99, 102, 241, 0.1);
 }
+
+.pagination-btn:disabled {
+  pointer-events: none;
+}

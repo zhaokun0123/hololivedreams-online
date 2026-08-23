@@ -124,44 +124,136 @@
     }
   }
 
-  // ===== 分类筛选（guides 页面） =====
-  function initCategoryFilter() {
-    var filterBtns = document.querySelectorAll("[data-filter]");
-    if (filterBtns.length === 0) return;
+  // ===== Guide filters, search, and pagination =====
+  function initGuideDirectory() {
+    var grid = document.getElementById("guideGrid");
+    var pagination = document.getElementById("guidePagination");
+    if (!grid || !pagination) return;
 
-    var cards = document.querySelectorAll(".guide-card");
+    var cards = Array.prototype.slice.call(
+      grid.querySelectorAll(".guide-card")
+    );
+    var filterBtns = document.querySelectorAll("[data-filter]");
+    var searchInput = document.getElementById("guideSearch");
+    var searchForm = document.getElementById("searchFormMain");
+    var countEl = document.getElementById("guideCount");
+    var emptyState = document.getElementById("guideEmptyState");
+    var pageSize = 3;
+    var params = new URLSearchParams(window.location.search);
+    var activeCategory = params.get("cat") || "all";
+    var searchQuery = params.get("q") || "";
+    var currentPage = Math.max(1, parseInt(params.get("page") || "1", 10));
+
+    if (searchInput) searchInput.value = searchQuery;
+
+    function setActiveFilter() {
+      filterBtns.forEach(function (btn) {
+        var isActive = btn.getAttribute("data-filter") === activeCategory;
+        btn.classList.toggle("active", isActive);
+        btn.classList.toggle("bg-indigo-500", isActive);
+        btn.classList.toggle("text-white", isActive);
+        btn.classList.toggle("bg-white", !isActive);
+        btn.classList.toggle("text-gray-600", !isActive);
+        btn.classList.toggle("hover:text-indigo-600", !isActive);
+      });
+    }
+
+    function getFilteredCards() {
+      var normalizedQuery = searchQuery.toLowerCase();
+      return cards.filter(function (card) {
+        var categoryMatches =
+          activeCategory === "all" ||
+          card.getAttribute("data-category") === activeCategory;
+        var searchMatches =
+          !normalizedQuery ||
+          card.textContent.toLowerCase().indexOf(normalizedQuery) !== -1;
+        return categoryMatches && searchMatches;
+      });
+    }
+
+    function updateUrl() {
+      var next = new URLSearchParams();
+      if (activeCategory !== "all") next.set("cat", activeCategory);
+      if (searchQuery) next.set("q", searchQuery);
+      if (currentPage > 1) next.set("page", String(currentPage));
+      var query = next.toString();
+      window.history.replaceState(null, "", "guides.html" + (query ? "?" + query : ""));
+    }
+
+    function makeButton(label, page, ariaLabel, disabled, active) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.className = "pagination-btn" + (active ? " active" : "");
+      button.innerHTML = label;
+      if (ariaLabel) button.setAttribute("aria-label", ariaLabel);
+      if (active) button.setAttribute("aria-current", "page");
+      button.disabled = disabled;
+      if (disabled) {
+        button.classList.add("opacity-40", "cursor-not-allowed");
+      } else {
+        button.addEventListener("click", function () {
+          currentPage = page;
+          render(true);
+        });
+      }
+      return button;
+    }
+
+    function render(shouldScroll) {
+      var filtered = getFilteredCards();
+      var totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      currentPage = Math.min(Math.max(1, currentPage), totalPages);
+      var startIndex = (currentPage - 1) * pageSize;
+      var visibleCards = filtered.slice(startIndex, startIndex + pageSize);
+
+      cards.forEach(function (card) {
+        card.style.display = visibleCards.indexOf(card) !== -1 ? "" : "none";
+      });
+      if (countEl) countEl.textContent = String(filtered.length);
+      if (emptyState) emptyState.classList.toggle("hidden", filtered.length !== 0);
+
+      pagination.innerHTML = "";
+      if (filtered.length > pageSize) {
+        pagination.appendChild(makeButton("&#8249;", currentPage - 1, "Previous page", currentPage === 1, false));
+        for (var page = 1; page <= totalPages; page++) {
+          pagination.appendChild(makeButton(String(page), page, "Page " + page, false, page === currentPage));
+        }
+        pagination.appendChild(makeButton("&#8250;", currentPage + 1, "Next page", currentPage === totalPages, false));
+      }
+
+      setActiveFilter();
+      updateUrl();
+      if (shouldScroll) {
+        grid.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
 
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var category = this.getAttribute("data-filter");
-
-        // 更新按钮状态
-        filterBtns.forEach(function (b) {
-          b.classList.remove("active");
-          b.classList.remove("bg-indigo-500");
-          b.classList.remove("text-white");
-          b.classList.add("bg-white");
-          b.classList.add("text-gray-600");
-          b.classList.add("hover:text-indigo-600");
-        });
-        this.classList.add("active");
-        this.classList.add("bg-indigo-500");
-        this.classList.add("text-white");
-        this.classList.remove("bg-white");
-        this.classList.remove("text-gray-600");
-        this.classList.remove("hover:text-indigo-600");
-
-        // 过滤卡片
-        cards.forEach(function (card) {
-          var cardCategory = card.getAttribute("data-category");
-          if (category === "all" || cardCategory === category) {
-            card.style.display = "";
-          } else {
-            card.style.display = "none";
-          }
-        });
+        activeCategory = this.getAttribute("data-filter") || "all";
+        currentPage = 1;
+        render(false);
       });
     });
+
+    if (searchForm) {
+      searchForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        searchQuery = searchInput ? searchInput.value.trim() : "";
+        currentPage = 1;
+        render(false);
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        searchQuery = this.value.trim();
+        currentPage = 1;
+        render(false);
+      });
+    }
+
+    render(false);
   }
 
   // ===== 移动端菜单切换 =====
@@ -214,7 +306,7 @@
     initTocHighlight();
     initSmoothScroll();
     initSearch();
-    initCategoryFilter();
+    initGuideDirectory();
     initMobileMenu();
     initLazyImages();
   }
